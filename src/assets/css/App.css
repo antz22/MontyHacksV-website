@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+:root {
+  --primary-color: #4158D0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1080px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+  .navbar {
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  .navbar .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar .container .nav-left {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .navbar .container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    position: unset;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .navbar .container nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+  }
+  .navbar .container nav li a {
+    color: black;
+    font-size: 1.1em;
+    padding: .1em 1em;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .navbar .container nav li a:hover {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    font-weight: normal;
+    color: var(--primary-color);
+  }
+  .navbar .container nav li.current a {
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  section {
+    padding: 2em 8em;
+  }
+}
+/*# sourceMappingURL=App.css.map */
