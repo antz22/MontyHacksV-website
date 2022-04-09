@@ -33,7 +33,7 @@
             top: 0;
             height: 100vh;
             padding: 1em;
-            background-color: var(--primary-color);
+            // background-color: var(--primary-color);
 
             ul {
                 margin-top: 5em;
@@ -43,7 +43,7 @@
 
                 a {
                     display: block;
-                    color: white;
+                    // color: white;
                     padding: .5em 2em .5em .5em;
                     font-size: 1.3em;
                     font-weight: normal;
@@ -52,7 +52,7 @@
 
                     &:hover {
                         font-weight: bold;
-                        color: white;
+                        // color: white;
                     }
                 }
             }
@@ -74,4 +74,69 @@
 
 nav.menu-btn {
     display: block !important;
+}
+
+
+@media only screen and (min-width: 1080px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+
+    .navbar .container {
+        display: flex;
+    }
+
+    .navbar .container .nav-left {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .navbar .container nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+
+        ul {
+            display: flex;
+            margin: auto;
+        }
+
+        li {
+
+            a {
+                color: black;
+                font-size: 1.1em;
+                padding: .1em 1em;
+                transition: 0.2s;
+
+                &:hover {
+                    transition: 0.2s;
+                    font-weight: normal;
+                    color: var(--primary-color);
+                }
+            }
+        }
+
+        li.current a {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+    }
+
+    section {
+        padding: 2em 8em;
+    }
+    
 }

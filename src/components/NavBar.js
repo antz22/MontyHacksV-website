@@ -6,7 +6,7 @@ function NavBar() {
             <div className="container">
                 <nav>
                     <a href="/"><img id="navbar-logo" src="assets/svgs/logo.svg" alt="Logo"></img></a>
-                    <ul class="primary-nav">
+                    <ul className="primary-nav">
                         <li><a href="#about">About</a></li>
                         <li><a href="#faq">FAQ</a></li>
                         <li><a href="#schedule">Schedule</a></li>
@@ -14,12 +14,12 @@ function NavBar() {
                     </ul>
                 </nav>
 
-                <img id="mobile-cta" class="mobile-menu" src="assets/svgs/logo.svg" alt="logo"></img>
+                <img id="mobile-cta" className="mobile-menu" src="assets/svgs/logo.svg" alt="logo"></img>
 
                 <nav>
-                    <img src="assets/svgs/exit.svg" alt="Exit" id="mobile-exit" class="mobile-menu-exit"></img>
-                    <ul class="primary-nav">
-                        <li><a href="">Register</a></li>
+                    <img src="assets/svgs/exit.svg" alt="Exit" id="mobile-exit" className="mobile-menu-exit"></img>
+                    <ul className="primary-nav">
+                        <li><a href="/">Register</a></li>
                     </ul>
                 </nav>
             </div>
